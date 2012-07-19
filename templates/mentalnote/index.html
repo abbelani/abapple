@@ -1,0 +1,13 @@
+{ % if list_of_notes % }
+	<ul>
+	 { % for note in list_of_notes % }
+	  <li>
+	   <p> {{ note.content }}
+	    <a href="/mentalnote/{{ note.id }}/"> {{ note.postedOn }} </a>
+	   </p>
+          </li>
+ 	 { % endfor % }
+	</ul>
+{ % else % }
+	<p> You haven't posted any notes. Post one now! </p>
+{ % endif % }
