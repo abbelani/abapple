@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'DJStatusForMe.views.home', name='home'),
+    url(r'^$', 'DJStatusForMe.views.home', name='home'),
     # url(r'^DJStatusForMe/', include('DJStatusForMe.foo.urls')),
     url(r'^mentalnote/$', 'mentalnote.views.index'),
     url(r'^mentalnote/(?P<note_id>\d+)/$', 'mentalnote.views.detail'),
